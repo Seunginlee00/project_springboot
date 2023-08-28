@@ -1,4 +1,4 @@
-package org.example.web;
+package com.java.web;
 
 import java.io.IOException;
 

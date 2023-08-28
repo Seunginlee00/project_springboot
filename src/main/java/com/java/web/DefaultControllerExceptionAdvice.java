@@ -1,4 +1,4 @@
-package org.example.web;
+package com.java.web;
 import java.util.NoSuchElementException;
 
 import org.springframework.ui.Model;
