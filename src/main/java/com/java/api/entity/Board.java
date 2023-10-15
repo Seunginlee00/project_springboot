@@ -1,5 +1,6 @@
 package com.java.api.entity;
 
+import com.java.api.entity.interfaces.BoardEntity;
 import lombok.*;
 
 import javax.persistence.Column;
@@ -10,7 +11,7 @@ import javax.persistence.Table;
 @Table(name = "BOARD")
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Board extends BaseDate{
+public class Board extends BaseDate implements BoardEntity {
     @Id
     private Long boardId; // 자동 번호 = 고유키
 
