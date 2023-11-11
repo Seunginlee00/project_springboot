@@ -5,16 +5,11 @@ import com.java.api.entity.interfaces.BoardEntity;
 
 public interface BoardService {
 
-    // 글쓰기
+    // 입력
 
-     Object BoardInsert(BoardEntity board);
+    int BoardInsert(BoardEntity entity) throws Exception;
 
-    // 글보기
-
-
-    //글수정
-
-    //글삭제 (단일)
-
-    //글삭제(전체)
+    // 수정
+    // 삭제
+    // 조회
 }
