@@ -31,7 +31,7 @@ public record BoardDto(
     }
 
 
-    public Board toEntity(String userName, Board board, BoardConfig boardConfig){
+    public Board toEntity(String userName, BoardConfig boardConfig){
         return Board.builder()
                 .classify(classify)
                 .subject(subject)

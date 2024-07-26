@@ -4,28 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ba3828-37ca-4af5-83b5-88f887a7b08f" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/dto/BoardDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/BoardConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/BoardConfigRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/BoardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/enums/AnswerYN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/enums/BoardType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/service/BoardService.java" afterDir="false" />
+    <list default="true" id="b6ba3828-37ca-4af5-83b5-88f887a7b08f" name="Changes" comment="게시판 게시판 설정 엔티티 생성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/java/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/java/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/java/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/java/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/java/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/dto/BoardDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/dto/BoardDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/service/BoardServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +41,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -168,12 +152,21 @@
       <option name="project" value="LOCAL" />
       <updated>1721813529828</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="게시판 게시판 설정 엔티티 생성">
+      <option name="closed" value="true" />
+      <created>1721899951277</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721899951277</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="게시판 게시판 설정 엔티티 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="게시판 게시판 설정 엔티티 생성" />
   </component>
 </project>

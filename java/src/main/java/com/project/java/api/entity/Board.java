@@ -1,5 +1,6 @@
 package com.project.java.api.entity;
 
+import com.project.java.api.dto.BoardDto;
 import com.project.java.api.entity.enums.AnswerYN;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -39,6 +40,21 @@ public class Board extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "board_config_id")
     private BoardConfig boardConfig;
+
+
+    public void update(BoardDto dto){
+        if(dto.classify() != null)
+            this.classify = dto.classify();
+        if(dto.subject() != null)
+            this.subject = dto.subject();
+        if(dto.content() != null)
+            this.content = dto.content();
+    }
+
+
+    public void viewUpdate(){
+        this.views++;
+    }
 
 
 }
