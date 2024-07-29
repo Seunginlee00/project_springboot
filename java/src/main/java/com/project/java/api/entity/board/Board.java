@@ -1,4 +1,4 @@
-package com.project.java.api.entity;
+package com.project.java.api.entity.board;
 
 import com.project.java.api.common.entity.BaseEntity;
 import com.project.java.api.dto.BoardDto;

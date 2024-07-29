@@ -1,10 +1,10 @@
-package com.project.java.api.service;
+package com.project.java.api.service.board;
 
 import com.project.java.api.dto.BoardDto;
-import com.project.java.api.entity.Board;
-import com.project.java.api.entity.BoardConfig;
-import com.project.java.api.entity.BoardConfigRepository;
-import com.project.java.api.entity.BoardRepository;
+import com.project.java.api.entity.board.Board;
+import com.project.java.api.entity.board.BoardConfig;
+import com.project.java.api.entity.board.BoardConfigRepository;
+import com.project.java.api.entity.board.BoardRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

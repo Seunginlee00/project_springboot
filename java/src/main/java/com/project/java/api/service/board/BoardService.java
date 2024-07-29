@@ -1,4 +1,4 @@
-package com.project.java.api.service;
+package com.project.java.api.service.board;
 
 import com.project.java.api.dto.BoardDto;
 

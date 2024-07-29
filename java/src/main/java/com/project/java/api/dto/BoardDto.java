@@ -1,7 +1,7 @@
 package com.project.java.api.dto;
 
-import com.project.java.api.entity.Board;
-import com.project.java.api.entity.BoardConfig;
+import com.project.java.api.entity.board.Board;
+import com.project.java.api.entity.board.BoardConfig;
 import com.project.java.api.entity.enums.AnswerYN;
 import com.project.java.api.entity.enums.BoardType;
 

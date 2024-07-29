@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6ba3828-37ca-4af5-83b5-88f887a7b08f" name="Changes" comment="게시판 입력 기능 추가">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/dto/BoardDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/dto/BoardDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/BoardConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/board/BoardConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/BoardConfigRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/board/BoardConfigRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/entity/board/BoardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/service/board/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/project/java/api/service/board/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/untitled/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +37,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="java" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -96,6 +109,7 @@
     "Gradle.java [build].executor": "Run",
     "Gradle.java [classes].executor": "Run",
     "Gradle.java [clean].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -105,7 +119,7 @@
     "project.structure.last.edited": "모듈",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.39930958",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -180,19 +194,6 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="bootProject" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="bootProject" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.java [classes]" />
@@ -200,6 +201,14 @@
         <item itemvalue="Gradle.java [clean]" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-868cef46" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
