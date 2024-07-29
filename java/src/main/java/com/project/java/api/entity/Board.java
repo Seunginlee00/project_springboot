@@ -1,5 +1,6 @@
 package com.project.java.api.entity;
 
+import com.project.java.api.common.entity.BaseEntity;
 import com.project.java.api.dto.BoardDto;
 import com.project.java.api.entity.enums.AnswerYN;
 import jakarta.persistence.*;

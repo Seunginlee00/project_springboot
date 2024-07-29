@@ -1,4 +1,4 @@
-package com.project.java.api.entity;
+package com.project.java.api.common.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;

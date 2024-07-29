@@ -32,8 +32,7 @@ public class BoardServiceImpl implements BoardService{
 
     @Override
     public void update(BoardDto dto) {
-        Board board = boardRepository.findById(dto.boardId())
-                .orElseThrow(IllegalAccessError.)
+        Board board =  null;
     }
 
     @Override
