@@ -1,7 +1,7 @@
-package com.project.java.api.entity.board;
+package com.java.project.api.entity.board;
 
-import com.project.java.api.entity.enums.AnswerYN;
-import com.project.java.api.entity.enums.BoardType;
+import com.java.project.api.entity.enums.AnswerYN;
+import com.java.project.api.entity.enums.BoardType;
 import jakarta.persistence.*;
 import lombok.*;
 

@@ -1,8 +1,8 @@
-package com.project.java.api.entity.board;
+package com.java.project.api.entity.board;
 
-import com.project.java.api.common.entity.BaseEntity;
-import com.project.java.api.dto.BoardDto;
-import com.project.java.api.entity.enums.AnswerYN;
+import com.java.project.api.entity.enums.AnswerYN;
+import com.java.project.api.common.entity.BaseEntity;
+import com.java.project.api.dto.BoardDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

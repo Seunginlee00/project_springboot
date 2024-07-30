@@ -1,4 +1,4 @@
-package com.project.java.api.entity.enums;
+package com.java.project.api.entity.enums;
 
 public enum AnswerYN {
     Y,N

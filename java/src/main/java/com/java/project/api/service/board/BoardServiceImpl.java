@@ -1,10 +1,12 @@
-package com.project.java.api.service.board;
+package com.java.project.api.service.board;
 
-import com.project.java.api.dto.BoardDto;
-import com.project.java.api.entity.board.Board;
-import com.project.java.api.entity.board.BoardConfig;
-import com.project.java.api.entity.board.BoardConfigRepository;
-import com.project.java.api.entity.board.BoardRepository;
+import com.java.project.api.dto.BoardConfigDto;
+import com.java.project.api.entity.board.BoardConfigRepository;
+import com.java.project.api.entity.board.BoardRepository;
+import com.java.project.api.dto.BoardDto;
+import com.java.project.api.entity.board.Board;
+import com.java.project.api.entity.board.BoardConfig;
+import com.java.project.api.entity.enums.AnswerYN;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -23,9 +25,21 @@ public class BoardServiceImpl implements BoardService{
 
     @Override
     public void insert(BoardDto dto) {
+        AnswerYN isView = AnswerYN.Y;
+        if(dto.isViewUse() != null)
+            isView = dto.isViewUse();
 
-        BoardConfig config = configRepository.save(dto.toEntity());
+        // 설정 찾기
 
+
+
+        // 기본 값..
+        BoardConfigDto cDto = new BoardConfigDto(dto.boardType(),isView,dto.topExpoCount());
+
+        BoardConfig config = configRepository.save(cDto.toEntity());
+
+
+        // 나아중에 jwt 토큰에서 가져와서 사용 할 것
         Board board = dto.toEntity("작성자",config);
         boardRepository.save(board);
     }

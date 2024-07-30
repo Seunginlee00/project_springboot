@@ -1,9 +1,9 @@
-package com.project.java.api.dto;
+package com.java.project.api.dto;
 
-import com.project.java.api.entity.board.Board;
-import com.project.java.api.entity.board.BoardConfig;
-import com.project.java.api.entity.enums.AnswerYN;
-import com.project.java.api.entity.enums.BoardType;
+import com.java.project.api.entity.board.Board;
+import com.java.project.api.entity.board.BoardConfig;
+import com.java.project.api.entity.enums.AnswerYN;
+import com.java.project.api.entity.enums.BoardType;
 
 import java.time.LocalDateTime;
 
@@ -21,15 +21,6 @@ public record BoardDto(
         AnswerYN isViewUse,
         int topExpoCount
 ) {
-
-    public BoardConfig toEntity(){
-        return BoardConfig.builder()
-                .boardType(boardType)
-                .isViewUse(AnswerYN.Y)
-                .topExpoCount(5)
-                .build();
-    }
-
 
     public Board toEntity(String userName, BoardConfig boardConfig){
         return Board.builder()
