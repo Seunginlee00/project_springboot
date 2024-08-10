@@ -1,6 +1,6 @@
 package com.java.project.api.service.board;
 
-import com.java.project.api.dto.BoardDto;
+import com.java.project.api.dto.board.BoardDto;
 
 import java.awt.print.Pageable;
 

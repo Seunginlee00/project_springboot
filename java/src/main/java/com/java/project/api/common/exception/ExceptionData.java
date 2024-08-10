@@ -16,6 +16,8 @@ public enum ExceptionData {
             "아이디 또는 비밀번호가 잘못 되었습니다. 아이디와 비밀번호를 정확히 입력해 주세요."),
 
     // custom exception
+
+    NOT_FOUND_BOARD(HttpStatus.BAD_REQUEST,"E0100"),
     ;
 
 

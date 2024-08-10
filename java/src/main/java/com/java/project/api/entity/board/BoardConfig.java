@@ -1,6 +1,5 @@
 package com.java.project.api.entity.board;
 
-import com.java.project.api.entity.enums.AnswerYN;
 import com.java.project.api.entity.enums.BoardType;
 import jakarta.persistence.*;
 import lombok.*;
@@ -21,7 +20,7 @@ public class BoardConfig {
     private BoardType boardType; // 게시판 분류
 
     @Enumerated(EnumType.STRING)
-    private AnswerYN isViewUse; // 조회수 사용여부
+    private Boolean isViewUse; // 조회수 사용여부
 
     private int topExpoCount; // 상단글 개수 여부
 

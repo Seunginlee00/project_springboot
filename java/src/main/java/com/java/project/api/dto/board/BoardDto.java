@@ -1,8 +1,7 @@
-package com.java.project.api.dto;
+package com.java.project.api.dto.board;
 
 import com.java.project.api.entity.board.Board;
 import com.java.project.api.entity.board.BoardConfig;
-import com.java.project.api.entity.enums.AnswerYN;
 import com.java.project.api.entity.enums.BoardType;
 
 import java.time.LocalDateTime;
@@ -18,7 +17,7 @@ public record BoardDto(
         String views,
         String userName,
         String isDelete,
-        AnswerYN isViewUse,
+        Boolean isViewUse,
         int topExpoCount
 ) {
 
@@ -29,14 +28,13 @@ public record BoardDto(
                 .content(content)
                 .views(0)
                 .userName(userName)
-                .isDelete(AnswerYN.N)
+                .isDelete(false)
                 .boardConfig(boardConfig)
                 .build();
     }
 
-
-//    public BoardDto(Board board){
-//        this(board.getId(),board.getCreatedDate(),board.getModifiedDate(), null,)
+//    public BoardDto toDto(Board board){
+//        this(board.getId(), board.)
 //    }
 
 
