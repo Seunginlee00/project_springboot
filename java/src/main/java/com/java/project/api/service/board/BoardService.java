@@ -1,23 +1,23 @@
 package com.java.project.api.service.board;
 
+import com.java.project.api.dto.SearchDto;
 import com.java.project.api.dto.board.BoardDto;
-
-import java.awt.print.Pageable;
+import org.springframework.data.domain.Pageable;
 
 public interface BoardService {
 
     // 입력
-    void insert(BoardDto dto);
+    void boardInsert(BoardDto dto);
 
     // 수정
-    void update(BoardDto dto);
+    void boardUpdate(BoardDto dto);
 
     // 삭제
-    void delete(Long boardId);
+    void boardDelete(Long boardId);
 
     // 단일조회
     Object boardInquiry(Long boardId);
 
     // 전체조회
-    Object boardList(String keyword, String keywordType, Pageable pageable);
+    Object boardList(SearchDto dto, Pageable pageable);
 }

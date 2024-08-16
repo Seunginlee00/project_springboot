@@ -2,17 +2,19 @@ package com.java.project.api.service.board;
 
 import com.java.project.api.common.exception.ApiException;
 import com.java.project.api.common.exception.ExceptionData;
+import com.java.project.api.dto.SearchDto;
 import com.java.project.api.dto.board.BoardConfigDto;
 import com.java.project.api.entity.board.BoardConfigRepository;
 import com.java.project.api.entity.board.BoardRepository;
 import com.java.project.api.dto.board.BoardDto;
 import com.java.project.api.entity.board.Board;
 import com.java.project.api.entity.board.BoardConfig;
+import com.java.project.api.entity.board.Impl.BoardRepositoryImpl;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import java.awt.print.Pageable;
 
 
 @Slf4j
@@ -23,10 +25,11 @@ public class BoardServiceImpl implements BoardService{
 
     private final BoardConfigRepository configRepository;
     private final BoardRepository boardRepository;
+    private final BoardRepositoryImpl boardImpl;
 
     @Transactional
     @Override
-    public void insert(BoardDto dto) {
+    public void boardInsert(BoardDto dto) {
         Board board = null;
         BoardConfig config = configRepository.findByBoardType(dto.boardType());
 
@@ -47,7 +50,7 @@ public class BoardServiceImpl implements BoardService{
 
     @Transactional
     @Override
-    public void update(BoardDto dto) {
+    public void boardUpdate(BoardDto dto) {
         Board board =  boardRepository.findById(dto.boardId()).orElseThrow(() -> new ApiException(ExceptionData
                 .NOT_FOUND_BOARD));
     // 수정
@@ -56,7 +59,7 @@ public class BoardServiceImpl implements BoardService{
     }
 
     @Override
-    public void delete(Long boardId) {
+    public void boardDelete(Long boardId) {
         boardRepository.deleteById(boardId);
     }
 
@@ -67,7 +70,7 @@ public class BoardServiceImpl implements BoardService{
     }
 
     @Override
-    public Object boardList(String keyword, String keywordType, Pageable pageable) {
-        return null;
+    public Object boardList(SearchDto dto, Pageable pageable) {
+        return boardImpl.boardList(dto,pageable);
     }
 }
