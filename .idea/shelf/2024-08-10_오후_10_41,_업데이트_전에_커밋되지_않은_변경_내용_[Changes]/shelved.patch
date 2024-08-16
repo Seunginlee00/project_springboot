@@ -1,0 +1,17 @@
+Index: java/src/main/java/com/project/java/api/dto/BoardDto.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.project.java.api.dto;\r\n\r\nimport com.project.java.api.entity.board.Board;\r\nimport com.project.java.api.entity.board.BoardConfig;\r\nimport com.project.java.api.entity.enums.AnswerYN;\r\nimport com.project.java.api.entity.enums.BoardType;\r\n\r\nimport java.time.LocalDateTime;\r\n\r\npublic record BoardDto(\r\n        Long boardId,\r\n        LocalDateTime createdDate,\r\n        LocalDateTime modifiedDate,\r\n        BoardType boardType,\r\n        String classify,\r\n        String subject,\r\n        String content,\r\n        String views,\r\n        String userName,\r\n        String isDelete,\r\n        AnswerYN isViewUse,\r\n        int topExpoCount\r\n) {\r\n\r\n    public BoardConfig toEntity(){\r\n        return BoardConfig.builder()\r\n                .boardType(boardType)\r\n                .isViewUse(AnswerYN.Y)\r\n                .topExpoCount(5)\r\n                .build();\r\n    }\r\n\r\n\r\n    public Board toEntity(String userName, BoardConfig boardConfig){\r\n        return Board.builder()\r\n                .classify(classify)\r\n                .subject(subject)\r\n                .content(content)\r\n                .views(0)\r\n                .userName(userName)\r\n                .isDelete(AnswerYN.N)\r\n                .boardConfig(boardConfig)\r\n                .build();\r\n    }\r\n\r\n\r\n//    public BoardDto(Board board){\r\n//        this(board.getId(),board.getCreatedDate(),board.getModifiedDate(), null,)\r\n//    }\r\n\r\n\r\n}\r\n
+===================================================================
+diff --git a/java/src/main/java/com/project/java/api/dto/BoardDto.java b/java/src/main/java/com/project/java/api/dto/BoardDto.java
+--- a/java/src/main/java/com/project/java/api/dto/BoardDto.java	
++++ b/java/src/main/java/com/project/java/api/dto/BoardDto.java	
+@@ -18,7 +18,7 @@
+         String views,
+         String userName,
+         String isDelete,
+-        AnswerYN isViewUse,
++        Boolean  isViewUse,
+         int topExpoCount
+ ) {
+ 

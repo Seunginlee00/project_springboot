@@ -6,11 +6,14 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import org.hibernate.annotations.SQLDelete;
+import org.hibernate.annotations.Where;
+
 @Getter
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Builder
+@Where(clause = "is_delete = true")
 @SQLDelete(sql = "UPDATE tb_board SET is_delete = true, modified_date = now() WHERE board_id = ?")
 @Table(name = "TB_BOARD")
 public class Board extends BaseEntity {
