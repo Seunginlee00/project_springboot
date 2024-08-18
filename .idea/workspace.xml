@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6ba3828-37ca-4af5-83b5-88f887a7b08f" name="Changes" comment="게시판 목록">
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/common/entity/ApiResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/config/QuerydslConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/applicaiton.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/2024-08-10__10_41_________Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2024-08-10__10_41_________Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2024-08-10__10_41_________Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2024-08-10__10_41_________Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2024-08-10__10_41_________Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2024-08-10_오후_10_41,_업데이트_전에_커밋되지_않은_변경_내용_[Changes]1/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/java/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/BoardRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,17 +39,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="java" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="java" type="f1a62948:ProjectNode" />
-                <item name="실행 구성" type="7b0102dc:RunConfigurationsNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -150,18 +143,13 @@
       <recent name="D:\project" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.JavaApplication">
-    <configuration name="JavaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.JavaApplication">
+    <configuration name="JavaApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.java.project.JavaApplication" />
       <module name="java.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.java.project.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=dev" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -255,12 +243,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.JavaApplication" />
       <item itemvalue="Gradle.java [build]" />
       <item itemvalue="Gradle.java [clean]" />
       <item itemvalue="Gradle.java [compileJava]" />
       <item itemvalue="Gradle.java [jar]" />
-      <item itemvalue="애플리케이션.applicaiton" />
-      <item itemvalue="애플리케이션.JavaApplication" />
     </list>
     <recent_temporary>
       <list>

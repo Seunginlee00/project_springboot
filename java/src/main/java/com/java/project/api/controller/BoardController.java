@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/v1/board")
 @RequiredArgsConstructor
 public class BoardController {
-    private BoardService boardService;
+    private final BoardService boardService;
 
     @Operation(summary = "게시판 입력 하기")
     @PostMapping
@@ -58,6 +58,15 @@ public class BoardController {
         ApiResult result = new ApiResult("200", "게시판 단일 조회", data);
         return ResponseEntity.ok().body(result);
     }
+
+
+//    @Operation(summary = "댓글 입력 하기")
+//    @GetMapping()
+//    public ResponseEntity<Object> commentInsert() {
+//
+//        return ResponseEntity.ok().body("ok");
+//    }
+
 
 
 }

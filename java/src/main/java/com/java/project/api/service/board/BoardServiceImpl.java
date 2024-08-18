@@ -58,6 +58,7 @@ public class BoardServiceImpl implements BoardService{
 
     }
 
+    @Transactional
     @Override
     public void boardDelete(Long boardId) {
         boardRepository.deleteById(boardId);
@@ -65,7 +66,7 @@ public class BoardServiceImpl implements BoardService{
 
     @Override
     public Object boardInquiry(Long boardId) {
-        return boardRepository.findById(boardId).orElseThrow(() -> new ApiException(ExceptionData
+        return boardRepository.findByIdAndIsDelete(boardId,false).orElseThrow(() -> new ApiException(ExceptionData
                 .NOT_FOUND_BOARD));
     }
 
