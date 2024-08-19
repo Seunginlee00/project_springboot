@@ -3,6 +3,7 @@ package com.java.project.api.controller;
 import com.java.project.api.common.entity.ApiResult;
 import com.java.project.api.dto.SearchDto;
 import com.java.project.api.dto.board.BoardDto;
+import com.java.project.api.dto.board.CommentDto;
 import com.java.project.api.service.board.BoardService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -60,13 +61,24 @@ public class BoardController {
     }
 
 
-//    @Operation(summary = "댓글 입력 하기")
-//    @GetMapping()
-//    public ResponseEntity<Object> commentInsert() {
-//
-//        return ResponseEntity.ok().body("ok");
-//    }
+    @Operation(summary = "댓글 입력 하기")
+    @PostMapping("/comment")
+    public ResponseEntity<String> commentInsert(@RequestBody CommentDto dto) {
+        boardService.commentInsert(dto);
+        return ResponseEntity.ok().body("ok");
+    }
 
-
+    @Operation(summary = "댓글 수정 하기")
+    @PatchMapping("/comment")
+    public ResponseEntity<String> commentUpdate(@RequestBody CommentDto dto) {
+        boardService.commentUpdate(dto);
+        return ResponseEntity.ok().body("ok");
+    }
+    @Operation(summary = "댓글 삭제 하기")
+    @PostMapping("/comment/{id}")
+    public ResponseEntity<String> commentInsert(@PathVariable (name = "id") Long commentId) {
+        boardService.commentDelete(commentId);
+        return ResponseEntity.ok().body("ok");
+    }
 
 }

@@ -2,6 +2,7 @@ package com.java.project.api.service.board;
 
 import com.java.project.api.dto.SearchDto;
 import com.java.project.api.dto.board.BoardDto;
+import com.java.project.api.dto.board.CommentDto;
 import org.springframework.data.domain.Pageable;
 
 public interface BoardService {
@@ -20,4 +21,13 @@ public interface BoardService {
 
     // 전체조회
     Object boardList(SearchDto dto, Pageable pageable);
+
+    // 댓글 입력
+    void commentInsert(CommentDto dto);
+
+    // 댓글 수정
+    void commentUpdate(CommentDto dto);
+    // 댓글 삭제
+    void commentDelete(Long commentId);
+
 }

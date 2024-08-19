@@ -18,7 +18,7 @@ public record BoardDto(
         String userName,
         Boolean isDelete,
         Boolean isViewUse,
-        int topExpoCount
+        Boolean isTopExpo
 ) {
 
     public Board toEntity(String userName, BoardConfig boardConfig){
@@ -29,6 +29,7 @@ public record BoardDto(
                 .views(0)
                 .userName(userName)
                 .isDelete(false)
+                .isTopExpo(isTopExpo)
                 .boardConfig(boardConfig)
                 .build();
     }
@@ -37,7 +38,7 @@ public record BoardDto(
     public BoardDto toDto(Board b){
         return new BoardDto(b.getId(),b.getCreatedDate(),b.getModifiedDate(), b.getBoardConfig().getBoardType(),
                 b.getClassify(), b.getSubject(),b.getContent(), b.getViews(), b.getUserName(), b.getIsDelete(),
-                b.getBoardConfig().getIsViewUse(),b.getBoardConfig().getTopExpoCount());
+                b.getBoardConfig().getIsViewUse(),b.getIsTopExpo());
     }
 
 
@@ -45,7 +46,7 @@ public record BoardDto(
     public BoardDto (Board b){
         this(b.getId(),b.getCreatedDate(),b.getModifiedDate(), b.getBoardConfig().getBoardType(),
                 b.getClassify(), b.getSubject(),b.getContent(), b.getViews(), b.getUserName(), b.getIsDelete(),
-                b.getBoardConfig().getIsViewUse(),b.getBoardConfig().getTopExpoCount());
+                b.getBoardConfig().getIsViewUse(),b.getIsTopExpo());
     }
 
 

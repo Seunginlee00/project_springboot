@@ -5,18 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6ba3828-37ca-4af5-83b5-88f887a7b08f" name="Changes" comment="게시판 목록">
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/config/QuerydslConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/applicaiton.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2024-08-10__10_41_________Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2024-08-10__10_41_________Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2024-08-10__10_41_________Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2024-08-10_오후_10_41,_업데이트_전에_커밋되지_않은_변경_내용_[Changes]1/shelved.patch" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/entity/board/QComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/BoardInquiryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/CommentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/CommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/enums/AnswerType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/entity/board/QBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/entity/board/QBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/common/exception/ExceptionData.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/common/exception/ExceptionData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/BoardDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/BoardDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/BoardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +53,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Record" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -142,8 +145,12 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\project" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.java.project.api.entity.board" />
+      <recent name="com.java.project.api.entity.enums" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.JavaApplication">
+  <component name="RunManager" selected="애플리케이션.JavaApplication">
     <configuration name="JavaApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -243,11 +250,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.JavaApplication" />
       <item itemvalue="Gradle.java [build]" />
       <item itemvalue="Gradle.java [clean]" />
       <item itemvalue="Gradle.java [compileJava]" />
       <item itemvalue="Gradle.java [jar]" />
+      <item itemvalue="애플리케이션.JavaApplication" />
     </list>
     <recent_temporary>
       <list>

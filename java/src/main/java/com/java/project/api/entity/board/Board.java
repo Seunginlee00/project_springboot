@@ -2,6 +2,7 @@ package com.java.project.api.entity.board;
 
 import com.java.project.api.common.entity.BaseEntity;
 import com.java.project.api.dto.board.BoardDto;
+import com.java.project.api.entity.enums.AnswerType;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -13,7 +14,7 @@ import org.hibernate.annotations.Where;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Builder
-//@Where(clause = "is_delete = true")
+@Where(clause = "is_delete = false")
 @SQLDelete(sql = "UPDATE tb_board SET is_delete = true, modified_date = now() WHERE board_id = ?")
 @Table(name = "TB_BOARD")
 public class Board extends BaseEntity {
@@ -36,6 +37,8 @@ public class Board extends BaseEntity {
     private int views; // 조회수
 
     private Boolean isDelete;  // 삭제 여부
+    private Boolean isTopExpo;
+    private AnswerType answerType; // 댓글 답변 여부
 
     @ManyToOne
     @JoinColumn(name = "board_config_id")
@@ -54,6 +57,9 @@ public class Board extends BaseEntity {
 
     public void viewUpdate(){
         this.views++;
+    }
+    public void setAnswerType(){
+        this.answerType = AnswerType.C;
     }
 
 

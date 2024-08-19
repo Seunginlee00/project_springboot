@@ -4,11 +4,10 @@ import com.java.project.api.common.exception.ApiException;
 import com.java.project.api.common.exception.ExceptionData;
 import com.java.project.api.dto.SearchDto;
 import com.java.project.api.dto.board.BoardConfigDto;
-import com.java.project.api.entity.board.BoardConfigRepository;
-import com.java.project.api.entity.board.BoardRepository;
+import com.java.project.api.dto.board.BoardInquiryDto;
+import com.java.project.api.dto.board.CommentDto;
+import com.java.project.api.entity.board.*;
 import com.java.project.api.dto.board.BoardDto;
-import com.java.project.api.entity.board.Board;
-import com.java.project.api.entity.board.BoardConfig;
 import com.java.project.api.entity.board.Impl.BoardRepositoryImpl;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 @Slf4j
-@Transactional(readOnly = true)
+@Transactional
 @Service
 @RequiredArgsConstructor
 public class BoardServiceImpl implements BoardService{
@@ -26,8 +25,8 @@ public class BoardServiceImpl implements BoardService{
     private final BoardConfigRepository configRepository;
     private final BoardRepository boardRepository;
     private final BoardRepositoryImpl boardImpl;
+    private final CommentRepository commentRepository;
 
-    @Transactional
     @Override
     public void boardInsert(BoardDto dto) {
         Board board = null;
@@ -48,7 +47,6 @@ public class BoardServiceImpl implements BoardService{
         boardRepository.save(board);
     }
 
-    @Transactional
     @Override
     public void boardUpdate(BoardDto dto) {
         Board board =  boardRepository.findById(dto.boardId()).orElseThrow(() -> new ApiException(ExceptionData
@@ -58,20 +56,52 @@ public class BoardServiceImpl implements BoardService{
 
     }
 
-    @Transactional
     @Override
     public void boardDelete(Long boardId) {
         boardRepository.deleteById(boardId);
     }
-
+    @Transactional(readOnly = true)
     @Override
     public Object boardInquiry(Long boardId) {
-        return boardRepository.findByIdAndIsDelete(boardId,false).orElseThrow(() -> new ApiException(ExceptionData
+        Board board = boardRepository.findByIdAndIsDelete(boardId,false).orElseThrow(() -> new ApiException(ExceptionData
                 .NOT_FOUND_BOARD));
+        board.viewUpdate();
+
+        Comment comment = commentRepository.findByBoard(board).orElseThrow(()
+                -> new ApiException(ExceptionData.NOT_FOUND_COMMENT));
+        BoardInquiryDto dto = new BoardInquiryDto(board,comment);
+
+        return dto;
     }
 
+    @Transactional(readOnly = true)
     @Override
     public Object boardList(SearchDto dto, Pageable pageable) {
         return boardImpl.boardList(dto,pageable);
+    }
+
+
+    @Override
+    public void commentInsert(CommentDto dto) {
+        Board board = boardRepository.findById(dto.boardId()).orElseThrow(() -> new ApiException(ExceptionData.NOT_FOUND_BOARD));
+        Comment comment = dto.toEntity("추후토큰값",board);
+
+        commentRepository.save(comment);
+        board.setAnswerType();
+    }
+
+    @Override
+    public void commentUpdate(CommentDto dto) {
+        Board board = boardRepository.findById(dto.boardId()).orElseThrow(()
+                -> new ApiException(ExceptionData.NOT_FOUND_BOARD));
+
+        Comment comment = commentRepository.findByBoard(board).orElseThrow(()
+        -> new ApiException(ExceptionData.NOT_FOUND_COMMENT));
+        comment.update(dto);
+    }
+
+    @Override
+    public void commentDelete(Long commentId) {
+        commentRepository.deleteById(commentId);
     }
 }

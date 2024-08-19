@@ -13,9 +13,6 @@ spring:
     url: jdbc:mysql://localhost:3308/project
     username: root
     password: 1234
-  #    url: jdbc:mysql://tkd.vrware.us:3306/tkd-dev
-  #    username: globepoint
-  #    password: globepoint
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
