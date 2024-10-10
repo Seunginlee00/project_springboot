@@ -34,7 +34,7 @@ public class BoardServiceImpl implements BoardService{
 
         if(config == null){
             // 해당 분류가 없다면
-            BoardConfigDto cDto = new BoardConfigDto(dto.boardType(),true, dto.topExpoCount());
+            BoardConfigDto cDto = new BoardConfigDto(dto.boardType(),true,100);
 
             config = configRepository.save(cDto.toEntity());
             board = dto.toEntity("jwt추출",config);

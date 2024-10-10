@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ba3828-37ca-4af5-83b5-88f887a7b08f" name="Changes" comment="게시판 목록">
-      <change afterPath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/entity/board/QComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/BoardInquiryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/CommentDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/CommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/enums/AnswerType.java" afterDir="false" />
+    <list default="true" id="b6ba3828-37ca-4af5-83b5-88f887a7b08f" name="Changes" comment="댓글 작성 중 &#10;postman 테스트 진행 중">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/java/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/entity/board/QBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/entity/board/QBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/common/exception/ExceptionData.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/common/exception/ExceptionData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/BoardDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/BoardDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/BoardConfigDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/BoardConfigDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
@@ -150,7 +141,7 @@
       <recent name="com.java.project.api.entity.enums" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.JavaApplication">
+  <component name="RunManager" selected="Gradle.java [dependencies]">
     <configuration name="JavaApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -227,6 +218,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="java [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="java [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -250,6 +263,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.java [dependencies]" />
       <item itemvalue="Gradle.java [build]" />
       <item itemvalue="Gradle.java [clean]" />
       <item itemvalue="Gradle.java [compileJava]" />
@@ -258,12 +272,21 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.java [dependencies]" />
         <item itemvalue="Gradle.java [compileJava]" />
         <item itemvalue="Gradle.java [clean]" />
         <item itemvalue="Gradle.java [jar]" />
         <item itemvalue="Gradle.java [build]" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-868cef46" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -325,7 +348,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723791002106</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="댓글 작성 중 &#10;postman 테스트 진행 중">
+      <option name="closed" value="true" />
+      <created>1724075152927</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724075152927</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,6 +369,7 @@
     <MESSAGE value="게시판 입력 기능 추가" />
     <MESSAGE value="게시판 추가 생성 중" />
     <MESSAGE value="게시판 목록" />
-    <option name="LAST_COMMIT_MESSAGE" value="게시판 목록" />
+    <MESSAGE value="댓글 작성 중 &#10;postman 테스트 진행 중" />
+    <option name="LAST_COMMIT_MESSAGE" value="댓글 작성 중 &#10;postman 테스트 진행 중" />
   </component>
 </project>

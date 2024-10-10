@@ -10,9 +10,9 @@ public record BoardConfigDto(
 ) {
     public BoardConfig toEntity(){
         return BoardConfig.builder()
-                .boardType(boardType)
-                .isViewUse(isViewUse) // 기본값
-                .topExpoCount(100) //기본값
+                .boardType(boardType())
+                .isViewUse(isViewUse()) // 기본값
+                .topExpoCount(topExpoCount()) //기본값
                 .build();
     }
 }

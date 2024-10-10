@@ -39,6 +39,8 @@ public class QBoard extends EntityPathBase<Board> {
 
     public final BooleanPath isDelete = createBoolean("isDelete");
 
+    public final BooleanPath isTopExpo = createBoolean("isTopExpo");
+
     //inherited
     public final DateTimePath<java.time.LocalDateTime> modifiedDate = _super.modifiedDate;
 
