@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ba3828-37ca-4af5-83b5-88f887a7b08f" name="Changes" comment="댓글 작성 중 &#10;postman 테스트 진행 중">
-      <change afterPath="$PROJECT_DIR$/java/TMI.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/config/jwt/JWTFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/config/jwt/JwtGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/config/jwt/LoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/config/jwt/service/CustomUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/config/security/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/user/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2024-08-10__10_41_________Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2024-08-10__10_41_________Changes_.xml" afterDir="false" />
+    <list default="true" id="b6ba3828-37ca-4af5-83b5-88f887a7b08f" name="Changes" comment="jwt 추가 중">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/java/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -364,11 +353,30 @@
       <option name="project" value="LOCAL" />
       <updated>1724075152927</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="jwt 추가 중">
+      <option name="closed" value="true" />
+      <created>1728638287510</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728638287510</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -378,6 +386,7 @@
     <MESSAGE value="게시판 추가 생성 중" />
     <MESSAGE value="게시판 목록" />
     <MESSAGE value="댓글 작성 중 &#10;postman 테스트 진행 중" />
-    <option name="LAST_COMMIT_MESSAGE" value="댓글 작성 중 &#10;postman 테스트 진행 중" />
+    <MESSAGE value="jwt 추가 중" />
+    <option name="LAST_COMMIT_MESSAGE" value="jwt 추가 중" />
   </component>
 </project>
