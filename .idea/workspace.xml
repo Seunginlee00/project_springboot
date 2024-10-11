@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6ba3828-37ca-4af5-83b5-88f887a7b08f" name="Changes" comment="댓글 작성 중 &#10;postman 테스트 진행 중">
+      <change afterPath="$PROJECT_DIR$/java/TMI.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/config/jwt/JWTFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/config/jwt/JwtGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/config/jwt/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/config/jwt/service/CustomUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/config/security/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/user/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2024-08-10__10_41_________Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2024-08-10__10_41_________Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/java/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/entity/board/QBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/entity/board/QBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/BoardConfigDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/BoardConfigDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +50,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -97,40 +103,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.java [:JavaApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java [classes].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java [compileJava].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java [dependencies].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java [jar].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.39930958&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;23ff5e1ed443861eaca377495be7b2ec&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.java [:JavaApplication.main()].executor": "Run",
+    "Gradle.java [build].executor": "Run",
+    "Gradle.java [classes].executor": "Run",
+    "Gradle.java [clean].executor": "Run",
+    "Gradle.java [compileJava].executor": "Run",
+    "Gradle.java [dependencies].executor": "Run",
+    "Gradle.java [jar].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "board",
+    "ignore.preview.features.used": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/project/java/src/main/java/com/java/project/api/config/jwt/service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.39930958",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "spring.configuration.checksum": "23ff5e1ed443861eaca377495be7b2ec",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\java\src\main\java\com\java\project\api\config\jwt\service" />
+      <recent name="D:\project\java" />
       <recent name="D:\project\java\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

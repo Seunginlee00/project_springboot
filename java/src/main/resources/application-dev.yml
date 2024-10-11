@@ -1,4 +1,6 @@
 spring:
+  jwt:
+    dngltkwfwlqekrhtlvekwmdfrmwdakfwlqrkrhtlvdjalxlfrjtrkxdkdlfjgrpgowheehlsmsrjfR
   servlet:
     multipart:
       enabled: true
