@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6ba3828-37ca-4af5-83b5-88f887a7b08f" name="Changes" comment="댓글 작성 중 &#10;postman 테스트 진행 중">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/java/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/entity/board/QBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/entity/board/QBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/BoardConfigDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/BoardConfigDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/common/entity/QBaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/entity/board/QBoard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/entity/board/QBoardConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/entity/board/QComment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/BoardInquiryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/BoardInquiryDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/CommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/enums/AnswerType.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,38 +102,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.java [:JavaApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java [classes].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java [compileJava].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java [dependencies].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java [jar].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.39930958&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;23ff5e1ed443861eaca377495be7b2ec&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.Build java.executor": "Run",
+    "Gradle.java [:JavaApplication.main()].executor": "Run",
+    "Gradle.java [build].executor": "Run",
+    "Gradle.java [classes].executor": "Run",
+    "Gradle.java [clean].executor": "Run",
+    "Gradle.java [compileJava].executor": "Run",
+    "Gradle.java [dependencies].executor": "Run",
+    "Gradle.java [jar].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.JavaApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.preview.features.used": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.39930958",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "23ff5e1ed443861eaca377495be7b2ec",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\java\src\main\resources" />
@@ -141,150 +152,22 @@
       <recent name="com.java.project.api.entity.enums" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.java [dependencies]">
-    <configuration name="JavaApplication" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="21" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.java.project.JavaApplication" />
+  <component name="RunManager">
+    <configuration name="JavaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="java.main" />
-      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=dev" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.java.project.JavaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="java [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/java" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="java [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/java" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="java [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/java" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="compileJava" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="java [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/java" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="java [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/java" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Gradle.java [dependencies]" />
-      <item itemvalue="Gradle.java [build]" />
-      <item itemvalue="Gradle.java [clean]" />
-      <item itemvalue="Gradle.java [compileJava]" />
-      <item itemvalue="Gradle.java [jar]" />
-      <item itemvalue="애플리케이션.JavaApplication" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.java [dependencies]" />
-        <item itemvalue="Gradle.java [compileJava]" />
-        <item itemvalue="Gradle.java [clean]" />
-        <item itemvalue="Gradle.java [jar]" />
-        <item itemvalue="Gradle.java [build]" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-868cef46" />
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
       </set>
     </attachedChunks>
   </component>
@@ -299,6 +182,8 @@
       <workItem from="1722394389987" duration="234000" />
       <workItem from="1722395903616" duration="1276000" />
       <workItem from="1723786626322" duration="88000" />
+      <workItem from="1729932965777" duration="159000" />
+      <workItem from="1729933135596" duration="2375000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -371,5 +256,9 @@
     <MESSAGE value="게시판 목록" />
     <MESSAGE value="댓글 작성 중 &#10;postman 테스트 진행 중" />
     <option name="LAST_COMMIT_MESSAGE" value="댓글 작성 중 &#10;postman 테스트 진행 중" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

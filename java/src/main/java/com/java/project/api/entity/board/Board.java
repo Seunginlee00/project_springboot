@@ -2,7 +2,6 @@ package com.java.project.api.entity.board;
 
 import com.java.project.api.common.entity.BaseEntity;
 import com.java.project.api.dto.board.BoardDto;
-import com.java.project.api.entity.enums.AnswerType;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -37,8 +36,8 @@ public class Board extends BaseEntity {
     private int views; // 조회수
 
     private Boolean isDelete;  // 삭제 여부
-    private Boolean isTopExpo;
-    private AnswerType answerType; // 댓글 답변 여부
+    private Boolean isTopExpo; // 상단 고정
+    private Boolean answerType; // 댓글 답변 여부
 
     @ManyToOne
     @JoinColumn(name = "board_config_id")
@@ -58,9 +57,11 @@ public class Board extends BaseEntity {
     public void viewUpdate(){
         this.views++;
     }
-    public void setAnswerType(){
-        this.answerType = AnswerType.C;
+
+    public void setAnswerType() {
+        this.answerType = !answerType;
     }
+
 
 
 }

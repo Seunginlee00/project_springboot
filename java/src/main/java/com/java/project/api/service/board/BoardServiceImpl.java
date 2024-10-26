@@ -67,9 +67,13 @@ public class BoardServiceImpl implements BoardService{
                 .NOT_FOUND_BOARD));
         board.viewUpdate();
 
-        Comment comment = commentRepository.findByBoard(board).orElseThrow(()
-                -> new ApiException(ExceptionData.NOT_FOUND_COMMENT));
-        BoardInquiryDto dto = new BoardInquiryDto(board,comment);
+        Comment comment = commentRepository.findByBoard(board);
+
+        BoardInquiryDto dto = BoardInquiryDto.dto(board);
+
+        if(comment != null) {
+            dto = BoardInquiryDto.dto(board,comment);
+        }
 
         return dto;
     }
@@ -95,9 +99,13 @@ public class BoardServiceImpl implements BoardService{
         Board board = boardRepository.findById(dto.boardId()).orElseThrow(()
                 -> new ApiException(ExceptionData.NOT_FOUND_BOARD));
 
-        Comment comment = commentRepository.findByBoard(board).orElseThrow(()
-        -> new ApiException(ExceptionData.NOT_FOUND_COMMENT));
-        comment.update(dto);
+        Comment comment = commentRepository.findByBoard(board);
+
+        if(comment != null){
+            comment.update(dto);
+        }
+
+        throw new ApiException(ExceptionData.NOT_FOUND_COMMENT);
     }
 
     @Override

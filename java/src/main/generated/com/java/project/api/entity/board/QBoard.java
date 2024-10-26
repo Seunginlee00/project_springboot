@@ -24,7 +24,7 @@ public class QBoard extends EntityPathBase<Board> {
 
     public final com.java.project.api.common.entity.QBaseEntity _super = new com.java.project.api.common.entity.QBaseEntity(this);
 
-    public final EnumPath<com.java.project.api.entity.enums.AnswerType> answerType = createEnum("answerType", com.java.project.api.entity.enums.AnswerType.class);
+    public final BooleanPath answerType = createBoolean("answerType");
 
     public final QBoardConfig boardConfig;
 
