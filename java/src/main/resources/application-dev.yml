@@ -10,9 +10,9 @@ spring:
       on-profile:
         dev
   datasource:
-    url: jdbc:mysql://localhost:3306/project
-    username: root
-    password: 1234
+    url: jdbc:mysql://144.24.85.229:3306/project
+    username: project
+    password: project00**
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:

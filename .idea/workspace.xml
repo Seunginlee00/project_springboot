@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ba3828-37ca-4af5-83b5-88f887a7b08f" name="Changes" comment="댓글 작성 중 &#10;postman 테스트 진행 중">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="b6ba3828-37ca-4af5-83b5-88f887a7b08f" name="Changes" comment="게시판 단일 조회 dto 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/common/entity/QBaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/entity/board/QBoard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/entity/board/QBoardConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/generated/com/java/project/api/entity/board/QComment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/BoardInquiryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/dto/board/BoardInquiryDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/board/CommentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/entity/enums/AnswerType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/java/project/api/service/board/BoardServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +75,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Seunginlee00/project_springboot.git&quot;,
-    &quot;accountId&quot;: &quot;bd3b7519-de1f-4a6e-9e2c-950f92b3ef49&quot;
+    &quot;accountId&quot;: &quot;dbf68e60-b0a5-4e7d-9fe4-06ba4cbf6350&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
@@ -102,44 +92,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Gradle.Build java.executor": "Run",
-    "Gradle.java [:JavaApplication.main()].executor": "Run",
-    "Gradle.java [build].executor": "Run",
-    "Gradle.java [classes].executor": "Run",
-    "Gradle.java [clean].executor": "Run",
-    "Gradle.java [compileJava].executor": "Run",
-    "Gradle.java [dependencies].executor": "Run",
-    "Gradle.java [jar].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.JavaApplication.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.preview.features.used": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.39930958",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "23ff5e1ed443861eaca377495be7b2ec",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.Build java.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java [:JavaApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java [classes].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java [compileJava].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java [dependencies].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java [jar].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.JavaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.39930958&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;23ff5e1ed443861eaca377495be7b2ec&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\java\src\main\resources" />
@@ -183,7 +173,8 @@
       <workItem from="1722395903616" duration="1276000" />
       <workItem from="1723786626322" duration="88000" />
       <workItem from="1729932965777" duration="159000" />
-      <workItem from="1729933135596" duration="2375000" />
+      <workItem from="1729933135596" duration="2839000" />
+      <workItem from="1733232270728" duration="695000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -241,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724075152927</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="게시판 단일 조회 dto 추가">
+      <option name="closed" value="true" />
+      <created>1729935972305</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729935972305</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +254,8 @@
     <MESSAGE value="게시판 추가 생성 중" />
     <MESSAGE value="게시판 목록" />
     <MESSAGE value="댓글 작성 중 &#10;postman 테스트 진행 중" />
-    <option name="LAST_COMMIT_MESSAGE" value="댓글 작성 중 &#10;postman 테스트 진행 중" />
+    <MESSAGE value="게시판 단일 조회 dto 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="게시판 단일 조회 dto 추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
