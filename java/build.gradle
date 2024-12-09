@@ -24,6 +24,10 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	// 추후 추가 예정
+//	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+//	implementation 'org.springframework.boot:spring-boot-starter-aop'
 
 	//Querydsl 추가
 	implementation 'com.querydsl:querydsl-jpa:5.1.0:jakarta'
@@ -33,9 +37,9 @@ dependencies {
 
 
 	//jwt
-	implementation group: 'io.jsonwebtoken', name: 'jjwt-api', version: '0.11.5'
-	runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-impl', version: '0.11.5'
-	runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-jackson', version: '0.11.5'
+	implementation 'io.jsonwebtoken:jjwt-api:0.12.5'
+	implementation 'io.jsonwebtoken:jjwt-impl:0.12.5'
+	implementation 'io.jsonwebtoken:jjwt-jackson:0.12.5'
 
 
 	// lombok
